@@ -156,7 +156,7 @@ async function run() {
     );
   }
 
-  if (!limitedStock) {
+  if (limitedStock) {
     console.log("Item has limited stock");
     sendEmailAlert(
       "Item Limited Stock Alert",
