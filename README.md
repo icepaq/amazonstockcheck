@@ -22,6 +22,8 @@ HOST=
 - Email is your SMTP username
 - Password is your SMTP password
 
+Inside of the index.js file modify lines 9-13 as needed.
+
 ### Running The Program
 Simply run `node index.js` and the program will run. In the case your are greeted with a Captcha from amazon, the program will spawn a python script that will solve the captcha.
 

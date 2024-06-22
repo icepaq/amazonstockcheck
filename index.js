@@ -10,7 +10,7 @@ const url =
   "https://www.amazon.ca/MG-Chemicals-Premium-Polyurethane-Conformal/dp/B06XC3JBVJ/ref=sr_1_3?crid=34YTYVJHEDPVC&dib=eyJ2IjoiMSJ9.ZYOdZvKVdlXoJrx58F2tq9EiDvNcv8wYN16UNkoqLJJV0SZmfsTGfLGIXkQPUATlNAmaxO9oAp3oWkc96yb7vr4m1O7EILo6UYk1pDdnUjKivDV1jwFfSYxHwEf8fRfngRd5HTfR_uIxKsQi8g0-IfFVNgQM0wEIyCDxMM03egW5PX78hMUMV5QYuu4v70FIbvH8BEyDj38vXx5VNPpCsNGvDc8aBXbi73wgJyzqTkddyMRW9z_gFIS6-OvAQG0tQlkdZH5_WOoQNVeYBx42NX7JfQjLRe0NnCXBpnTjd3E.yi-FXlC9NlsZaMEbJptLDi2bUItOi9GW8vO2uSt9OGQ&dib_tag=se&keywords=conformal+coating&qid=1719015986&sprefix=conformal+coatin%2Caps%2C107&sr=8-3";
 const toEmail = "your-email@example.com"; // Replace with your email for notifications
 const toName = "Your Name"; // Replace with your name so emails don't go to spam
-const itemId = "Taylor Swift CDs";
+const itemId = "Taylor Swift CDs"; // a unique name or id for the item being tracked
 
 const transporter = nodemailer.createTransport({
   host: process.env.HOST,
