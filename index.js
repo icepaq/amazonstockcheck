@@ -110,7 +110,7 @@ async function checkStock() {
   } catch (error) {
     console.error("Error checking stock:", error);
   } finally {
-    // await driver.quit();
+    await driver.quit();
   }
 }
 
@@ -130,14 +130,6 @@ function sendEmailAlert(subject, text) {
     console.log("Email sent:", info.response);
   });
 }
-
-// Schedule the check to run every hour
-// cron.schedule("0 * * * *", () => {
-//   console.log("Checking stock status...");
-//   checkStock();
-// });
-
-// Initial check
 
 let oldPrice = -1;
 
@@ -175,6 +167,7 @@ async function run() {
   oldPrice = price;
 
   const FOUR_HOURS = 1000 * 60 * 60 * 4;
+  // const TEN_SECONDS = 1000 * 10;
   setTimeout(run, FOUR_HOURS);
 }
 
