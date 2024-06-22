@@ -171,4 +171,9 @@ async function run() {
   setTimeout(run, FOUR_HOURS);
 }
 
+function testEmail() {
+  sendEmailAlert("Test Email", "This is a test email");
+}
+
 run();
+// testEmail();
